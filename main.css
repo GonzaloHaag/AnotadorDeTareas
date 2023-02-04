@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+:root{
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    --ff-primary:"Roboto",sans-serif;
+    --ff-secondary:"Open Sans",sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow:var(--dark-shadow);
+    margin-top: 5rem;
+    padding: 2rem;
+    gap: 1.2rem;
+    
+}
+.wrapper h4{
+    font-family: var(--ff-secondary);
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.input-container{
+    display: flex;
+    align-items: center;
+    
+
+}
+#submit{
+    padding: 0.2rem;
+    background-color: rgb(94, 216, 216);
+    font-family: var(--ff-secondary);
+    width: 4rem;
+    height: 2rem;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+
+}
+#submit:hover{
+    background-color: rgb(92, 92, 233);
+    color:#fff;
+    transition: 1s;
+}
+.form{
+    display: flex;
+    align-items: center;
+}
+#input-tarea{
+    width: 18rem;
+    padding: 0.2rem;
+    padding-left: 0.5rem;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: none;
+    height: 2rem;
+}
+.tareas-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.tarea{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--ff-secondary);
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    gap: 0.2rem;
+}
+#clear{
+    color:red;
+    cursor: pointer;
+}
+.mensaje{
+ 
+    width: 95%;
+    font-family: var(--ff-primary);
+    text-align: center;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
